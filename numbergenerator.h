@@ -7,6 +7,7 @@ class QLineEdit;
 class QPushButton;
 class QHBoxLayout;
 class QVBoxLayout;
+class QScrollArea;
 
 class NumberGenerator : public QWidget
 {
@@ -24,6 +25,7 @@ private:
     QVBoxLayout *numbersListView;
 
     QHBoxLayout * createRangeComponent();
+    QScrollArea * createNumbersListComponent();
 };
 
 #endif // NUMBERGENERATOR_H
