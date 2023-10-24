@@ -15,6 +15,9 @@ class NumberGenerator : public QWidget
 public:
     explicit NumberGenerator(QWidget *parent = nullptr);
 
+signals:
+    void generated(int value);
+
 public slots:
     void generate();
 

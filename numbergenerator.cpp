@@ -12,6 +12,7 @@
 #include <QRegularExpression>
 #include <QRegularExpressionValidator>
 #include "randutils.h"
+#include "widgets/sumwidget.h"
 
 NumberGenerator::NumberGenerator(QWidget *parent)
     : QWidget{parent}
@@ -22,15 +23,19 @@ NumberGenerator::NumberGenerator(QWidget *parent)
     generateButton = new QPushButton(tr("&Generate"));
     QScrollArea *numbersList = createNumbersListComponent();
 
+    SumWidget *sumWidget = new SumWidget();
+
     QGridLayout *mainLayout = new QGridLayout;
     mainLayout->addLayout(rangeLayout, 0, 0);
     mainLayout->addWidget(generateButton, 1, 0);
     mainLayout->addWidget(numbersList, 2, 0);
+    mainLayout->addWidget(sumWidget, 3, 0);
 
     setLayout(mainLayout);
     setWindowTitle(tr("Number Generator"));
 
     connect(generateButton, SIGNAL (clicked()), this, SLOT (generate()));
+    connect(this, SIGNAL (generated(int)), sumWidget, SLOT (addValue(int)));
 }
 
 void NumberGenerator::generate()
@@ -40,6 +45,8 @@ void NumberGenerator::generate()
     QLabel *item = new QLabel(QString::number(number));
     item->setMinimumHeight(40);
     numbersListView->insertWidget(0, item);
+
+    emit generated(number);
 }
 
 QHBoxLayout * NumberGenerator::createRangeComponent()
