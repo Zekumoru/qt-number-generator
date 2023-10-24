@@ -1,7 +1,7 @@
 #include "sumwidget.h"
 
 SumWidget::SumWidget(QWidget *parent)
-    : DataWidget{"Sum", parent}
+    : DataWidget{tr("Sum"), parent}
 {
 
 }

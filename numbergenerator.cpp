@@ -13,6 +13,9 @@
 #include <QRegularExpressionValidator>
 #include "randutils.h"
 #include "widgets/sumwidget.h"
+#include "widgets/averagewidget.h"
+#include "widgets/maxwidget.h"
+#include "widgets/minwidget.h"
 
 NumberGenerator::NumberGenerator(QWidget *parent)
     : QWidget{parent}
@@ -24,18 +27,27 @@ NumberGenerator::NumberGenerator(QWidget *parent)
     QScrollArea *numbersList = createNumbersListComponent();
 
     SumWidget *sumWidget = new SumWidget();
+    AverageWidget *averageWidget = new AverageWidget();
+    MaxWidget *maxWidget = new MaxWidget();
+    MinWidget *minWidget = new MinWidget();
 
     QGridLayout *mainLayout = new QGridLayout;
     mainLayout->addLayout(rangeLayout, 0, 0);
     mainLayout->addWidget(generateButton, 1, 0);
     mainLayout->addWidget(numbersList, 2, 0);
     mainLayout->addWidget(sumWidget, 3, 0);
+    mainLayout->addWidget(averageWidget, 4, 0);
+    mainLayout->addWidget(maxWidget, 5, 0);
+    mainLayout->addWidget(minWidget, 6, 0);
 
     setLayout(mainLayout);
     setWindowTitle(tr("Number Generator"));
 
     connect(generateButton, SIGNAL (clicked()), this, SLOT (generate()));
     connect(this, SIGNAL (generated(int)), sumWidget, SLOT (addValue(int)));
+    connect(this, SIGNAL (generated(int)), averageWidget, SLOT (addValue(int)));
+    connect(this, SIGNAL (generated(int)), maxWidget, SLOT (addValue(int)));
+    connect(this, SIGNAL (generated(int)), minWidget, SLOT (addValue(int)));
 }
 
 void NumberGenerator::generate()
