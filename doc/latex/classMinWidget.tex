@@ -1,0 +1,93 @@
+\doxysection{Min\+Widget Class Reference}
+\hypertarget{classMinWidget}{}\label{classMinWidget}\index{MinWidget@{MinWidget}}
+
+
+The \doxylink{classMinWidget}{Min\+Widget} class calculates and shows the minimum numbers of "{}all"{}, "{}even"{}, and "{}odd"{}.  
+
+
+Inheritance diagram for Min\+Widget\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classMinWidget}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classMinWidget_a220cffd34c917c97a4b06ea7ee596d3b}{add\+Value}} (int value)
+\begin{DoxyCompactList}\small\item\em Calculates the minimum values then updates the widget\textquotesingle{}s interface. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Slots inherited from \mbox{\hyperlink{classDataWidget}{Data\+Widget}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classDataWidget_a9283a710e9bfb1e487725b2ae51f62bd}{add\+Value}} (int value)=0
+\begin{DoxyCompactList}\small\item\em A virtual method which contains the internal logic. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classMinWidget_a7b5e503f1377a3d587fd591034533190}{Min\+Widget}} (QWidget \texorpdfstring{$\ast$}{*}parent=nullptr)
+\begin{DoxyCompactList}\small\item\em Constructs the minimum widget. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classDataWidget}{Data\+Widget}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classDataWidget_a7fa717c8617af880931b7c777a8ee873}{Data\+Widget}} (const QString \&title, QWidget \texorpdfstring{$\ast$}{*}parent=nullptr)
+\begin{DoxyCompactList}\small\item\em Constructs a data widget. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{classDataWidget}{Data\+Widget}}}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries update\+Interface} ()
+\begin{DoxyCompactList}\small\item\em Updates the values of "{}add"{}, "{}even"{}, and "{}odd"{} values in the widget\textquotesingle{}s interface. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classDataWidget}{Data\+Widget}}}
+\begin{DoxyCompactItemize}
+\item 
+double {\bfseries all\+Value}
+\item 
+double {\bfseries even\+Value}
+\item 
+double {\bfseries odd\+Value}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \doxylink{classMinWidget}{Min\+Widget} class calculates and shows the minimum numbers of "{}all"{}, "{}even"{}, and "{}odd"{}. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classMinWidget_a7b5e503f1377a3d587fd591034533190}\label{classMinWidget_a7b5e503f1377a3d587fd591034533190} 
+\index{MinWidget@{MinWidget}!MinWidget@{MinWidget}}
+\index{MinWidget@{MinWidget}!MinWidget@{MinWidget}}
+\doxysubsubsection{\texorpdfstring{MinWidget()}{MinWidget()}}
+{\footnotesize\ttfamily Min\+Widget\+::\+Min\+Widget (\begin{DoxyParamCaption}\item[{QWidget \texorpdfstring{$\ast$}{*}}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Constructs the minimum widget. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & The parent which is passed to QWidget constructor. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classMinWidget_a220cffd34c917c97a4b06ea7ee596d3b}\label{classMinWidget_a220cffd34c917c97a4b06ea7ee596d3b} 
+\index{MinWidget@{MinWidget}!addValue@{addValue}}
+\index{addValue@{addValue}!MinWidget@{MinWidget}}
+\doxysubsubsection{\texorpdfstring{addValue}{addValue}}
+{\footnotesize\ttfamily void Min\+Widget\+::add\+Value (\begin{DoxyParamCaption}\item[{int}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+Calculates the minimum values then updates the widget\textquotesingle{}s interface. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The value which is used to calculate the minimum values. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+widgets/minwidget.\+h\item 
+widgets/minwidget.\+cpp\end{DoxyCompactItemize}

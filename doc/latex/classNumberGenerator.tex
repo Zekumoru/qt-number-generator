@@ -1,0 +1,80 @@
+\doxysection{Number\+Generator Class Reference}
+\hypertarget{classNumberGenerator}{}\label{classNumberGenerator}\index{NumberGenerator@{NumberGenerator}}
+
+
+The \doxylink{classNumberGenerator}{Number\+Generator} class is the main widget of the program.  
+
+
+
+
+{\ttfamily \#include "{}numbergenerator.\+h"{}}
+
+Inheritance diagram for Number\+Generator\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classNumberGenerator}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classNumberGenerator_ac1303ce4dd25974855a87925823d5a60}\label{classNumberGenerator_ac1303ce4dd25974855a87925823d5a60} 
+void {\bfseries generate} ()
+\begin{DoxyCompactList}\small\item\em Generates a random number. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classNumberGenerator_ac0397b7632cd3030050f69b915c036a2}{generated}} (int value)
+\begin{DoxyCompactList}\small\item\em Emits when a random number "{}value"{} is generated. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classNumberGenerator_af010a62c2d5ab090bded77f90ceb262f}{Number\+Generator}} (QWidget \texorpdfstring{$\ast$}{*}parent=nullptr)
+\begin{DoxyCompactList}\small\item\em Constructs the random number generator widget. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \doxylink{classNumberGenerator}{Number\+Generator} class is the main widget of the program. 
+
+Generates random number between the user-\/specified range which must be around 1 to 999. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classNumberGenerator_af010a62c2d5ab090bded77f90ceb262f}\label{classNumberGenerator_af010a62c2d5ab090bded77f90ceb262f} 
+\index{NumberGenerator@{NumberGenerator}!NumberGenerator@{NumberGenerator}}
+\index{NumberGenerator@{NumberGenerator}!NumberGenerator@{NumberGenerator}}
+\doxysubsubsection{\texorpdfstring{NumberGenerator()}{NumberGenerator()}}
+{\footnotesize\ttfamily Number\+Generator\+::\+Number\+Generator (\begin{DoxyParamCaption}\item[{QWidget \texorpdfstring{$\ast$}{*}}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Constructs the random number generator widget. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & The parent which is passed to QWidget constructor. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classNumberGenerator_ac0397b7632cd3030050f69b915c036a2}\label{classNumberGenerator_ac0397b7632cd3030050f69b915c036a2} 
+\index{NumberGenerator@{NumberGenerator}!generated@{generated}}
+\index{generated@{generated}!NumberGenerator@{NumberGenerator}}
+\doxysubsubsection{\texorpdfstring{generated}{generated}}
+{\footnotesize\ttfamily void Number\+Generator\+::generated (\begin{DoxyParamCaption}\item[{int}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Emits when a random number "{}value"{} is generated. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The random number generated. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+numbergenerator.\+h\item 
+numbergenerator.\+cpp\end{DoxyCompactItemize}

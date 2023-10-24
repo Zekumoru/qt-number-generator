@@ -1,0 +1,46 @@
+\doxysection{randutils.\+h File Reference}
+\hypertarget{randutils_8h}{}\label{randutils_8h}\index{randutils.h@{randutils.h}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{randutils_8h_aea2524bd1631435b633c711811f39c16}{randinit}} ()
+\begin{DoxyCompactList}\small\item\em Initializes a new sequence of random numbers. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{randutils_8h_a0d15ff76783673381e1e6a086137733c}{randbetween}} (int min, int max)
+\begin{DoxyCompactList}\small\item\em Generates a random integer value between a minimum and maximum values. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Utilities to facilitate generating random numbers. 
+
+\doxysubsection{Function Documentation}
+\Hypertarget{randutils_8h_a0d15ff76783673381e1e6a086137733c}\label{randutils_8h_a0d15ff76783673381e1e6a086137733c} 
+\index{randutils.h@{randutils.h}!randbetween@{randbetween}}
+\index{randbetween@{randbetween}!randutils.h@{randutils.h}}
+\doxysubsubsection{\texorpdfstring{randbetween()}{randbetween()}}
+{\footnotesize\ttfamily int randbetween (\begin{DoxyParamCaption}\item[{int}]{min,  }\item[{int}]{max }\end{DoxyParamCaption})}
+
+
+
+Generates a random integer value between a minimum and maximum values. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em min} & The minimum integer value to generate a random number with. \\
+\hline
+{\em max} & The maximum integer value to generate a random number with. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A random integer value between min and max esclusive. 
+\end{DoxyReturn}
+\Hypertarget{randutils_8h_aea2524bd1631435b633c711811f39c16}\label{randutils_8h_aea2524bd1631435b633c711811f39c16} 
+\index{randutils.h@{randutils.h}!randinit@{randinit}}
+\index{randinit@{randinit}!randutils.h@{randutils.h}}
+\doxysubsubsection{\texorpdfstring{randinit()}{randinit()}}
+{\footnotesize\ttfamily void randinit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Initializes a new sequence of random numbers. 
+
+Sets the seed of the random number generator using the current time. 
